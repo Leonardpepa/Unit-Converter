@@ -14,5 +14,5 @@
 
 # Showcase
 ![preview-image](https://github.com/leonardpepa/Unit-Converter/blob/master/Capture.JPG?raw=true)
-![preview-image](https://github.com/leonardpepa/react-netflix-frontend/blob/master/Capture2.JPG?raw=true)
+![preview-image](https://github.com/leonardpepa/Unit-Converter/blob/master/Capture2.JPG?raw=true)
 
