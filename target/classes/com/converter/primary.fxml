@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.converter.Controller">
+   <children>
+      <Label layoutX="208.0" style="-fx-font-size: 30; -fx-padding: 10;" text="CONVERTER" />
+      <Pane fx:id="root" layoutX="16.0" layoutY="72.0" prefHeight="515.0" prefWidth="571.0">
+         <children>
+            <Button fx:id="length" layoutX="121.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShowPane" text="Length" />
+            <Button fx:id="weight" layoutX="213.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShowPane" text="Weight" />
+            <Button fx:id="volume" layoutX="295.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShowPane" text="Volume" />
+            <Button fx:id="number" layoutX="387.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShowPane" text="Number" />
+            <Pane fx:id="numberPane" layoutX="103.0" layoutY="75.0" prefHeight="412.0" prefWidth="352.0" visible="false">
+               <children>
+                  <TextField fx:id="binary" layoutX="23.0" layoutY="97.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <TextField fx:id="decimal" layoutX="23.0" layoutY="40.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <TextField fx:id="hex" layoutX="23.0" layoutY="150.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <TextField fx:id="octal" layoutX="23.0" layoutY="212.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="23.0" text="Decimal" />
+                  <Label layoutX="23.0" layoutY="78.0" text="Binary" />
+                  <Label layoutX="23.0" layoutY="132.0" text="Hex" />
+                  <Label layoutX="23.0" layoutY="194.0" text="Octal" />
+               </children>
+            </Pane>
+            <Pane fx:id="volumePane" layoutX="103.0" layoutY="61.0" prefHeight="412.0" prefWidth="352.0" visible="false">
+               <children>
+                  <TextField fx:id="cm3" layoutX="23.0" layoutY="97.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <TextField fx:id="m3" layoutX="23.0" layoutY="40.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <TextField fx:id="ft3" layoutX="23.0" layoutY="150.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="23.0" text="m3 (cubic meters)" />
+                  <Label layoutX="23.0" layoutY="78.0" text="cm3 (cubic centimeter)" />
+                  <Label layoutX="23.0" layoutY="132.0" text="ft3 (cubic foot)" />
+                  <TextField fx:id="km3" layoutX="23.0" layoutY="212.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="22.0" layoutY="194.0" text="km3 (cubic kilometer)" />
+                  <TextField fx:id="l" layoutX="23.0" layoutY="274.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="256.0" text="L (litres)" />
+               </children>
+            </Pane>
+            <Pane fx:id="lengthPane" layoutX="103.0" layoutY="52.0" prefHeight="412.0" prefWidth="352.0" visible="false">
+               <children>
+                  <TextField fx:id="mm" layoutX="23.0" layoutY="97.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <TextField fx:id="cm" layoutX="23.0" layoutY="40.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <TextField fx:id="m" layoutX="23.0" layoutY="150.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="23.0" text="cm (centimeter)" />
+                  <Label layoutX="23.0" layoutY="78.0" text="mm (millimeter)" />
+                  <Label layoutX="23.0" layoutY="132.0" text="m (meter)" />
+                  <TextField fx:id="km" layoutX="23.0" layoutY="212.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="194.0" text="km (kilometer)" />
+                  <TextField fx:id="in" layoutX="23.0" layoutY="274.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="256.0" text="in (inches)" />
+                  <TextField fx:id="ft" layoutX="23.0" layoutY="333.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="317.0" text="ft (feet)" />
+               </children>
+            </Pane>
+            <Pane fx:id="weightPane" layoutX="103.0" layoutY="75.0" prefHeight="412.0" prefWidth="352.0" visible="false"> 
+               <children>
+                  <TextField fx:id="kg" layoutX="23.0" layoutY="97.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <TextField fx:id="g" layoutX="23.0" layoutY="40.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <TextField fx:id="mg" layoutX="23.0" layoutY="150.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="23.0" text="g (gram)" />
+                  <Label layoutX="23.0" layoutY="78.0" text="kg (kilograms)" />
+                  <Label layoutX="23.0" layoutY="132.0" text="mg (milligram )" />
+                  <TextField fx:id="mcg" layoutX="23.0" layoutY="212.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="194.0" text="mcg (micrograms)" />
+                  <TextField fx:id="lb" layoutX="23.0" layoutY="274.0"  onKeyTyped="#handleInputDynamicaly" prefHeight="26.0" prefWidth="325.0" />
+                  <Label layoutX="23.0" layoutY="256.0" text="lb (pounds)" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
