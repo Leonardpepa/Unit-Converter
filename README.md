@@ -10,6 +10,7 @@
 # Technologies
 * Gui was created with Scene Builder and JavaFx
 * logic was created with Java and basic Java libraries
+* Netbeans IDE version 12.0
 
 # Showcase
 
