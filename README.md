@@ -13,5 +13,5 @@
 * Netbeans IDE version 12.0
 
 # Showcase
-
+![preview-image](https://github.com/leonardpepa/Unit-Converter/blob/master/Capture.JPG?raw=true)
 
