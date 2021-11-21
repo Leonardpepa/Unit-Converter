@@ -13,7 +13,7 @@
 * Netbeans IDE version 12.0
 
 # Showcase
-![preview-image](https://github.com/leonardpepa/Unit-Converter/blob/master/calculator.gif.JPG?raw=true)
+![Alt Text](https://github.com/leonardpepa/Unit-Converter/blob/master/calculator.gif?raw=true)
 ![Alt Text](https://media.giphy.com/media/sFBQOn6cqW21C5UZ78/giphy.gif)
 ![preview-image](https://github.com/leonardpepa/Unit-Converter/blob/master/Capture.JPG?raw=true)
 ![preview-image](https://github.com/leonardpepa/Unit-Converter/blob/master/Capture2.JPG?raw=true)
